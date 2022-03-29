@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
-const config = require('config');
-const db = config.get('mongoURI');
+const db =
+  'mongodb+srv://chanvi123:iFpO0MBN7kEkAHRk@cluster0.7s7th.mongodb.net/myFirstDatabase?retryWrites=true&w=majority';
 
 const connectDB = async () => {
   //? practice using try catch

@@ -1,15 +1,15 @@
 const express = require('express');
 const connectDB = require('./config/db');
 const path = require('path');
-
 const app = express();
+const UserRoutes = require('./routes/users');
 
 connectDB();
 
 app.use(express.json({ extended: false }));
 const PORT = process.env.PORT || 5000;
 
-app.use('/api/users', require('./routes/users'));
+app.use('/api/users', UserRoutes);
 
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static('client/build'));
