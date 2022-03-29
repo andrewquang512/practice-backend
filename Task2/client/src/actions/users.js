@@ -10,7 +10,7 @@ import {
 
 export const getUsers = () => async (dispatch) => {
   try {
-    const res = await axios.get('http://localhost:5000/api/users');
+    const res = await axios.get('/api/users');
 
     dispatch({
       type: GET_USERS,
@@ -34,11 +34,7 @@ export const addUser = (formData) => async (dispatch) => {
     },
   };
   try {
-    const res = await axios.post(
-      `http://localhost:5000/api/users`,
-      formData,
-      config
-    );
+    const res = await axios.post(`/api/users`, formData, config);
 
     dispatch({
       type: ADD_USER,
@@ -65,7 +61,7 @@ export const addUser = (formData) => async (dispatch) => {
 
 export const deleteUser = (id) => async (dispatch) => {
   try {
-    await axios.delete(`http://localhost:5000/api/users/${id}`);
+    await axios.delete(`/api/users/${id}`);
 
     dispatch({
       type: DELETE_USER,
