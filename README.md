@@ -20,4 +20,4 @@ To run the Task 3, open the index.html
 
 The Family Tree can Copy/Paste a Family json text or Upload a Family json file to preview the Family Tree with the Simpson.json as the sample json file
 
-The Family Tree cannot edit on the diagram
+The Family Tree cannot edit on the diagram nor seach the tree
