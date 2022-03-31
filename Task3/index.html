@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hierarchies</title>
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    rel="stylesheet"
+    />
+    <link
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    
+    <style>
+      path {
+        fill: none;
+        stroke: black;
+      }
+    </style>
+
+</head>
+<body>
+  <div class="d-flex justify-content-center mt-3">
+    <h2 class="h2 display-3" >A Family Tree Project</h2>
+  </div>
+  <div class="container-fluid mt-5">
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="row">
+          <div class="col-sm-2">
+          </div>
+          <div class="col-sm-10">
+              <div class="form-group">
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
+                  </div>
+                  <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+                    <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+                  </div>
+                </div>
+              </div>
+              <hr>
+              <form>
+              <div class="form-group d-flex justify-content-center">
+                <p for="selection" >Or Type the JSON here</p>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" placeholder="Please follow the JSON format"  id="jsonFileInput" cols="20" rows="20"></textarea>
+              </div>
+              <div class="row">
+                <div class="col-sm-2"></div>
+                <div class="col-sm d-flex justify-content-center">
+                  <button  type="button" class="btn btn-primary" onClick="textareaHandle()">Submit</button>
+                </div>
+                <div class="col-sm-2"></div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-sm-8">
+        <div class="d-flex justify-content-center">
+          <h4 class="h4 display-4" >Preview</h4>
+        </div>
+        <main></main>
+        
+      </div>
+    </div>
+  </div>
+</body>
+
+<script type="text/javascript" src="./Tree.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

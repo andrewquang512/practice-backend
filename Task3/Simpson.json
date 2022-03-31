@@ -1,0 +1,80 @@
+[
+    {
+      "child":"Abe Simpson",
+      "parents":[]
+    },
+    {
+      "child":"Mona Simpson",
+      "parents":[]
+    },
+    {
+      "child":"Clancy Bouvier",
+      "parents":[]
+    },
+    {
+      "child":"Jacqueline Bouvier",
+      "parents":[]
+    },
+    {
+      "child":"Herb Simpson",
+      "parents":[
+        "Abe Simpson",
+        "Mona Simpson"
+      ]
+    },
+    {
+      "child":"Homer Simpson",
+      "parents":[
+        "Abe Simpson",
+        "Mona Simpson"
+      ]
+    },
+    {
+      "child":"Marge Bouvier",
+      "parents":[
+        "Clancy Bouvier",
+        "Jacqueline Bouvier"
+      ]
+    },
+    {
+      "child":"Patty Bouvier",
+      "parents":[
+        "Clancy Bouvier",
+        "Jacqueline Bouvier"
+      ]
+    },
+    {
+      "child":"Selma Bouvier",
+      "parents":[
+        "Clancy Bouvier",
+        "Jacqueline Bouvier"
+      ]
+    },
+    {
+      "child":"Bart Simpson",
+      "parents":[
+        "Homer Simpson",
+        "Marge Bouvier"
+      ]
+    },
+    {
+      "child":"Lisa Simpson",
+      "parents":[
+        "Homer Simpson",
+        "Marge Bouvier"
+      ]
+    },
+    {
+      "child":"Maggie Simpson",
+      "parents":[
+        "Homer Simpson",
+        "Marge Bouvier"
+      ]
+    },
+    {
+      "child":"Ling Bouvier",
+      "parents":[
+        "Selma Bouvier"
+      ]
+    }
+  ]
